@@ -1,17 +1,15 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+@media (min-width: 375px) and (max-width : 767px){
+   html,
+   body {
+      margin: 0;
+      padding: 0;
+   }
+       
 }
-
-html {
-    // 10px div by def of 16px
-    font-size: 62.5%;
+h1 h2 h3 {
+   font-family: $font_sh;
 }
-
-body {
-    box-sizing: border-box;
-    background: $colour-secondary;
+h4{
+   font-family: $font_sh;
 }
+   

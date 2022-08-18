@@ -1,9 +1,7 @@
-$colour-primary: #15DEA5;
-$colour-secondary: #001534;
-$colour-accent: #D6FFF5;
-$colour-white: #fff;
-$colour-invalid: #DB464B;
-
-$heading-shadow-size: .55rem;
-$layout-margin: 6rem;
-$grid-gutter: $layout-margin * .25;
+$font_ro: "Roboto";
+$font_sh: "shrikhand";
+$color_primaire: #9356DC;
+$color_secondaire: #FF79DA;
+$color_tertiaire:#99E2D0;
+$color_degrade: linear-gradient(180deg, rgba(215, 46, 204, 0.9285965606945903) 43%, rgba(147, 35, 212, 1) 100%);
+/*$breakpoints: (phone: 375px, tablet: 768px, desktop: 992px)!default;*/

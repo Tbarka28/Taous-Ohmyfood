@@ -1,150 +1,378 @@
-*,
-*::after,
-*::before {
+@import url("https://fonts.googleapis.com/css2? family= Raleway:wght@100;400 & family= Roboto:wght@300;400 & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400&family=Shrikhand&display=swap");
+/*$breakpoints: (phone: 375px, tablet: 768px, desktop: 992px)!default;*/
+/*@mixin phone  { 
+  @media (min-width: 375px) and (max-width : 767px)
+   { @content ; } */
+@media (min-width: 375px) and (max-width: 767px) {
+  html,
+body {
+    margin: 0;
+    padding: 0;
+  }
+}
+h1 h2 h3 {
+  font-family: "shrikhand";
+}
+
+h4 {
+  font-family: "shrikhand";
+}
+
+.logo {
+  font-family: "shrikhand";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 5px;
+  box-shadow: 0.5rem 0.5rem 1rem gainsboro;
+  height: 50px;
+  padding-top: 15px;
+}
+
+.barnav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #eae4e4;
+  height: 50px;
+  align-items: center;
+}
+.barnav .texte-barnav {
+  font-family: Roboto;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%;
+.bloc-reservation {
+  font-family: "Roboto";
+  background-color: hsl(0deg, 13%, 95%);
+  margin-top: 0px;
+  height: 270px;
 }
-
-body {
-  box-sizing: border-box;
-  background: #001534;
+.bloc-reservation_titre {
+  margin-top: 0px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 22px;
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #15DEA5;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 1.7;
+.bloc-reservation_sous_titre {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
 }
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 5rem;
-  font-style: italic;
-}
-
-textarea {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
-}
-
-button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 2.75rem;
-}
-
-.btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
-  cursor: pointer;
-}
-.btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
-}
-.btn--full-width {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.header {
-  background: #15DEA5;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.header__logo {
-  font-size: 7rem;
-  color: #001534;
-  margin-left: 10rem;
-  text-shadow: 0.55rem 0.55rem #fff;
-}
-
-.nav {
-  padding-right: 6rem;
-  flex: 2 1 auto;
-  text-align: right;
-}
-.nav__link {
-  display: inline;
-  font-size: 3rem;
-  padding-left: 1.5rem;
-}
-.nav__link a {
-  text-decoration: none;
-  color: #D6FFF5;
-}
-.nav__link--active {
-  color: #001534;
-}
-.nav__link--active:hover {
-  cursor: default;
-  color: #001534;
-}
-.nav__link a:hover {
-  color: #fff;
-}
-
-.container {
-  margin: 6rem;
-  padding: 1.5rem 1.5rem 0 1.5rem;
-  border: 0.1rem solid #D6FFF5;
-}
-
-.form {
-  width: 100%;
-  padding-bottom: 1.5rem;
-}
-.form__heading {
-  width: 100%;
-  color: #fff;
-  text-shadow: 0.55rem 0.55rem #11af82;
-  background: #15DEA5;
-  line-height: 5rem;
-  padding: 1.5rem;
-}
-.form__field label {
-  color: #D6FFF5;
+.bloc-reservation_btn {
+  background: linear-gradient(180deg, rgba(215, 46, 204, 0.9285965607) 43%, rgb(147, 35, 212) 100%);
+  box-shadow: 0px 5px 5px 0px #eae4e4;
+  padding: 15px 15px;
+  color: white;
+  border-radius: 30px;
+  width: 165px;
   display: block;
-  font-size: 2rem;
-  line-height: 2rem;
-  padding-top: 1.5rem;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  text-decoration: none;
+  /*&_btn:hover{
+     background: #9256dc;
+  }*/
 }
-.form__field input {
+
+.bloc-fonctionnement {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  background: #001534;
-  border: 0.1rem solid #15DEA5;
-  padding: 1.5rem;
-  color: #D6FFF5;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 2.75rem;
-  border: 0.1rem solid #15DEA5;
-  background-color: #001534;
-  color: #15DEA5;
 }
-.form__field textarea {
+.bloc-fonctionnement_titre {
+  margin-left: 10%;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-fonctionnement_titre {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-fonctionnement_titre {
+    margin-left: 20px;
+  }
+}
+.bloc-fonctionnement_elements {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  cursor: pointer;
   width: 100%;
-  color: #15DEA5;
-  background: #001534;
-  border: 0.1rem solid #15DEA5;
-  outline: none;
-  padding: 1.5rem;
-  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-fonctionnement_elements {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-fonctionnement_elements {
+    flex-direction: row;
+  }
+}
+.bloc-fonctionnement_elements li {
+  list-style-type: none;
+  counter-increment: element;
+  display: flex;
+  margin: auto;
+  font-weight: bold;
+  background-color: #F2F2F2;
+  border-radius: 20px 20px 20px 20px;
+  align-items: center;
+  width: 80%;
+  font-family: "Roboto";
+  height: 80px;
+  box-shadow: 0.5rem 0.5rem 1rem gainsboro;
+  margin-bottom: 20px;
+  /*@media (min-width: 992px){
+
+      width: 30%;
+  }*/
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-fonctionnement_elements li {
+    width: 29%;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-fonctionnement_elements li {
+    width: 30%;
+  }
+}
+.bloc-fonctionnement_elements li:hover {
+  background-color: rgb(244, 244, 251);
+}
+.bloc-fonctionnement_elements li:hover i {
+  color: #9356DC;
+}
+.bloc-fonctionnement_elements li i {
+  margin-right: 20px;
+  color: gray;
+  font-size: 20px;
+}
+.bloc-fonctionnement_elements li:before {
+  content: counter(element);
+  padding: 6px 10px;
+  background: #9356DC;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 11px;
+  color: white;
+  margin-left: -10px;
+  margin-right: 30px;
+}
+
+.bloc-restaurants {
+  margin-top: 50px;
+  background: #eae4e4;
+  height: auto;
+  padding-top: 20px;
+  display: block;
+  justify-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-restaurants {
+    width: 100%;
+    margin-right: 20px;
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-restaurants {
+    width: 100%;
+    margin-right: 20px;
+    padding-right: 0;
+  }
+}
+
+.restaurant-titre {
+  margin-left: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-restaurants-cartes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-restaurants-cartes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.bloc-restaurants-carte {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px 20px 20px 20px;
+  width: 92%;
+  height: 260px;
+  text-decoration: none;
+  color: black;
+  line-height: 15px;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 1rem gainsboro;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-restaurants-carte {
+    display: flex;
+    flex-wrap: wrap;
+    width: 46%;
+    height: 270px;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-restaurants-carte {
+    display: flex;
+    flex-wrap: wrap;
+    width: 47%;
+    height: 270px;
+    padding: 0;
+  }
+}
+.bloc-restaurants-carte-titre {
+  margin-left: 10px;
+  padding-top: 20px;
+  margin-top: 0px;
+}
+.bloc-restaurants-carte-sous-titre {
+  margin-left: 10px;
+  margin-top: 0px;
+}
+.bloc-restaurants-carte img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  height: 180px;
+}
+.bloc-restaurants-carte .btn-nouveau {
+  background-color: #99E2D0;
+  color: green;
+  width: 70px;
+  height: 25px;
+  padding: 7px 4px 0px 15px;
+  border-radius: 3px;
+  position: absolute;
+  margin-left: 72%;
+  margin-top: 10px;
+  animation: nouveau 3s linear infinite;
+}
+@keyframes nouveau {
+  50% {
+    opacity: 0;
+  }
+}
+.bloc-restaurants-carte .fa-regular {
+  position: absolute;
+  margin-left: 76%;
+  margin-top: 200px;
+  font-size: 20px;
+  font-size: 30px;
+}
+.bloc-restaurants-carte .fa-solid {
+  position: absolute;
+  margin-left: 76%;
+  margin-top: 200px;
+  font-size: 30px;
+  color: transparent;
+  /*background-clip: border-box ;
+  -webkit-background-clip: border-box;*/
+  transition: all 500ms ease-in-out;
+}
+.bloc-restaurants-carte .fa-solid:hover {
+  color: #9256dc;
+  /*color:$color_degrade;*/
+  transform: scale(1);
+  /*opacity: 1;*/
+}
+
+.bloc-footer {
+  background-color: rgb(76, 70, 70);
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 300px;
+  margin: auto;
+}
+.bloc-footer-elements {
+  line-height: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-footer-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-footer-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+.bloc-footer h4 {
+  color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.proposition {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+}
+.proposition .fa-utensils {
+  margin-right: 10px;
+}
+.proposition-titre {
+  margin-top: 0px;
+}
+
+.partenaire {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+}
+.partenaire-titre {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.mentions-legales {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+
+.contact {
+  text-decoration: none;
+  color: white;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
