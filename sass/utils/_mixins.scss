@@ -1,4 +1,4 @@
-@mixin bloc-fonctionnement_element{
+/*@mixin bloc-fonctionnement_element{
              
     display: flex;
     justify-content:space-evenly;
@@ -16,7 +16,19 @@
 /*@mixin phone  { 
   @media (min-width: 375px) and (max-width : 767px)
    { @content ; } */
+   @mixin logo {
 
+    font-family: $font_sh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 5px;
+    position: fixed;
+    height: 50px;
+    padding-top: 15px;
+  
+  }
 @mixin tablet { 
   @media (min-width: 768px) and (max-width : 992px) { @content ; } 
 }
@@ -25,6 +37,70 @@
 @mixin desktop { 
   @media (min-width: 992px) { @content ; } 
 }
+@mixin coeur {
+   
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 200px;
+    font-size: 30px;
+    transition: all 500ms ease-in-out;
+    -webkit-background-composite: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+
+    &:hover {
+        background: linear-gradient(175deg, $color_secondaire 10%, $color_primaire 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: unset;
+
+        transform: scale(1);
 
 
 
+    }
+  
+}
+.nav_btn{
+  text-align: center;
+    background: $color_degrade;
+    padding: 15px 15px;
+    color: white;
+    border-radius: 30px;
+    width: 170px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow:  3px 5px 19px 6px rgba(219,212,212,0.75);
+    }
+    .nav_btn:hover{
+    background: linear-gradient($color_primaire, 3%, $color_secondaire);   
+    opacity: 2;
+    transform: scale(1.05);
+    box-shadow:  4px 6px 20px 7px rgba(219,212,212,0.75);
+}
+@mixin btn-check{
+  :hover .prix-plat {
+    cursor: pointer;
+    margin-right: 84px;
+    }
+:hover .btn-confirmation {
+    cursor: pointer;
+    animation-name: btn-confirmation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    position: absolute;
+
+
+
+    .fa-circle-check {
+
+        animation: check 1s;
+
+    }
+}
+}
