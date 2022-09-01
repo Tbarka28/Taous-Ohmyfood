@@ -60,14 +60,14 @@
     /*opacity: 1;*/
   }
 }
-/*@keyframes element-btn-confirmation{
-    0% {
-        transform: scale(50%)
-      }
-      100% {
-        transform: scale(1);
+@keyframes element-btn-confirmation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-}*/
 @media (min-width: 375px) and (max-width: 767px) {
   html,
 body {
@@ -198,49 +198,10 @@ h4 {
   height: 80px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-bottom: 0px;
   width: auto;
   text-overflow: ellipsis;
-  /*:hover .btn-confirmation {
-      cursor: pointer;
-      animation-name: btn-confirmation;
-      animation-duration: 0.5s;
-      animation-fill-mode: both;
-      /*right: 80px;
-
-
-
-      .fa-circle-check {
-
-          animation: check 1s;
-
-      }*/
-  /*@include tablet {}
-
-  @include desktop {}*/
-  /*.element-plat {
-      display: flex;
-      justify-content: space-between;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 100%;
-
-      /*line-height: 18px;
-      width: auto;
-      height: auto;
-      overflow: hidden;
-      text-overflow: ellipsis;
-
-  }*/
-  /*right: -83px;*/
-  /*right: -82px;
-  top: -220px;*/
-  /*display: none;
-      /*overflow: hidden;
-      z-index: 0;
-      transition: all 5s;
-      z-index: -1;*/
 }
 .element-btn-confirmation .nom-plat {
   display: flex;
@@ -248,11 +209,13 @@ h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Roboto";
+  font-size: 17px;
 }
 .element-btn-confirmation .titre-plat {
   font-size: 20px;
-  margin-left: 15px;
-  margin-top: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
   margin-bottom: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -287,11 +250,16 @@ h4 {
   position: absolute;
   right: -84px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .element-btn-confirmation .btn-confirmation {
+    width: 70px;
+  }
+}
 
 .delay-anim1 {
   animation: element-btn-confirmation 1s;
   animation-fill-mode: both;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .delay-anim1 :hover .prix-plat {
   cursor: pointer;
@@ -311,7 +279,7 @@ h4 {
 .delay-anim2 {
   animation: element-btn-confirmation 1s;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 .delay-anim2 :hover .prix-plat {
   cursor: pointer;
@@ -331,7 +299,7 @@ h4 {
 .delay-anim3 {
   animation: element-btn-confirmation 1s;
   animation-fill-mode: both;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 .delay-anim3 :hover .prix-plat {
   cursor: pointer;
@@ -351,7 +319,7 @@ h4 {
 .delay-anim4 {
   animation: element-btn-confirmation 1s;
   animation-fill-mode: both;
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 .delay-anim4 :hover .prix-plat {
   cursor: pointer;
@@ -368,6 +336,106 @@ h4 {
   animation: check 1s;
 }
 
+.delay-anim5 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 2.5s;
+}
+.delay-anim5 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim5 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim5 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
+.delay-anim6 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+.delay-anim6 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim6 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim6 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
+.delay-anim7 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 3.5s;
+}
+.delay-anim7 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim7 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim7 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
+.delay-anim8 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+.delay-anim8 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim8 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim8 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
+.delay-anim9 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 4.5s;
+}
+.delay-anim9 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim9 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim9 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
 .titre-confirmation {
   display: none;
 }
@@ -379,14 +447,6 @@ h4 {
   margin-left: 25px;
 }
 
-/*@keyframes fa-circle-check  {
-            0% {
-                transform: scaleX(0);
-            }
-            100% {
-                transform: scaleX(1);
-            }
-        }*/
 @media (min-width: 768px) and (max-width: 992px) {
   .menu-entree {
     width: 34%;
