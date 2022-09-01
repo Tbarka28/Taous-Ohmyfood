@@ -1,9 +1,73 @@
 @import url("https://fonts.googleapis.com/css2? family= Raleway:wght@100;400 & family= Roboto:wght@300;400 & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400&family=Shrikhand&display=swap");
 /*$breakpoints: (phone: 375px, tablet: 768px, desktop: 992px)!default;*/
+/*@mixin bloc-fonctionnement_element{
+
+    display: flex;
+    justify-content:space-evenly;
+    font-weight: bold;
+     background-color: #F2F2F2;
+     border-radius: 20px 20px 20px 20px;
+    align-items: center;
+    width: 400px;
+    font-family: $font_ro ;
+     height: 70px;
+     box-shadow: 0.5rem 0.5rem 1rem gainsboro;
+    margin-bottom: 30px;
+}
+
 /*@mixin phone  { 
   @media (min-width: 375px) and (max-width : 767px)
    { @content ; } */
+.nav_btn {
+  text-align: center;
+  background: linear-gradient(175deg, #FF79DA 15%, #9356DC 100%);
+  padding: 15px 15px;
+  color: white;
+  border-radius: 30px;
+  width: 170px;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
+}
+
+.nav_btn:hover {
+  background: linear-gradient(#9356DC, 3%, #FF79DA);
+  opacity: 2;
+  transform: scale(1.05);
+  box-shadow: 4px 6px 20px 7px rgba(219, 212, 212, 0.75);
+}
+
+@keyframes check {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes btn-confirmation {
+  0% {
+    transform: translateX(0px);
+    /*opacity: 0;*/
+  }
+  100% {
+    transform: translateX(-82px);
+    /*opacity: 1;*/
+  }
+}
+/*@keyframes element-btn-confirmation{
+    0% {
+        transform: scale(50%)
+      }
+      100% {
+        transform: scale(1);
+}
+}*/
 @media (min-width: 375px) and (max-width: 767px) {
   html,
 body {
@@ -19,90 +83,31 @@ h4 {
   font-family: "shrikhand";
 }
 
-.logo {
-  font-family: "shrikhand";
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  margin-bottom: 5px;
-  box-shadow: 0.5rem 0.5rem 1rem gainsboro;
-  height: 50px;
-  padding-top: 15px;
-}
-
-.barnav {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #eae4e4;
-  height: 50px;
-  align-items: center;
-}
-.barnav .texte-barnav {
-  font-family: Roboto;
-  font-size: 15px;
-  margin-left: 20px;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.bloc-reservation {
-  font-family: "Roboto";
-  background-color: hsl(0deg, 13%, 95%);
-  margin-top: 0px;
-  height: 270px;
-}
-.bloc-reservation_titre {
-  margin-top: 0px;
-  padding-top: 25px;
+.nav_btn {
   text-align: center;
-  font-size: 22px;
-}
-.bloc-reservation_sous_titre {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 18px;
-}
-.bloc-reservation_btn {
-  background: linear-gradient(180deg, rgba(215, 46, 204, 0.9285965607) 43%, rgb(147, 35, 212) 100%);
-  box-shadow: 0px 5px 5px 0px #eae4e4;
+  background: linear-gradient(175deg, #FF79DA 15%, #9356DC 100%);
   padding: 15px 15px;
   color: white;
   border-radius: 30px;
-  width: 165px;
+  width: 170px;
   display: block;
   justify-content: center;
   margin: auto;
   font-size: 15px;
   text-decoration: none;
-  /*&_btn:hover{
-     background: #9256dc;
-  }*/
+  font-weight: bold;
+  box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.bloc-fonctionnement {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+.nav_btn:hover {
+  background: linear-gradient(#9356DC, 3%, #FF79DA);
+  opacity: 2;
+  transform: scale(1.05);
+  box-shadow: 4px 6px 20px 7px rgba(219, 212, 212, 0.75);
 }
-.bloc-fonctionnement_titre {
-  margin-left: 10%;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .bloc-fonctionnement_titre {
-    margin-left: 20px;
-  }
-}
-@media (min-width: 992px) {
-  .bloc-fonctionnement_titre {
-    margin-left: 20px;
-  }
-}
+
 .bloc-fonctionnement_elements {
   display: flex;
   flex-direction: column;
@@ -134,10 +139,6 @@ body {
   height: 80px;
   box-shadow: 0.5rem 0.5rem 1rem gainsboro;
   margin-bottom: 20px;
-  /*@media (min-width: 992px){
-
-      width: 30%;
-  }*/
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bloc-fonctionnement_elements li {
@@ -151,6 +152,7 @@ body {
 }
 .bloc-fonctionnement_elements li:hover {
   background-color: rgb(244, 244, 251);
+  box-shadow: 1rem 1rem 1.5rem gainsboro;
 }
 .bloc-fonctionnement_elements li:hover i {
   color: #9356DC;
@@ -170,6 +172,522 @@ body {
   color: white;
   margin-left: -10px;
   margin-right: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu {
+    display: flex;
+    /*justify-content: space-evenly;*/
+  }
+}
+@media (min-width: 992px) {
+  .menu {
+    display: flex;
+  }
+}
+
+.element-btn-confirmation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  border-radius: 20px 20px 20px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 1px 1px 10px 1px rgba(188, 188, 188, 0.88);
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding-bottom: 0px;
+  width: auto;
+  text-overflow: ellipsis;
+  /*:hover .btn-confirmation {
+      cursor: pointer;
+      animation-name: btn-confirmation;
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      /*right: 80px;
+
+
+
+      .fa-circle-check {
+
+          animation: check 1s;
+
+      }*/
+  /*@include tablet {}
+
+  @include desktop {}*/
+  /*.element-plat {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+
+      /*line-height: 18px;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+  }*/
+  /*right: -83px;*/
+  /*right: -82px;
+  top: -220px;*/
+  /*display: none;
+      /*overflow: hidden;
+      z-index: 0;
+      transition: all 5s;
+      z-index: -1;*/
+}
+.element-btn-confirmation .nom-plat {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.element-btn-confirmation .titre-plat {
+  font-size: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.element-btn-confirmation .sous-titre-plat {
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.element-btn-confirmation .prix-plat {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 9px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.element-btn-confirmation .btn-confirmation {
+  background: #99E2D0;
+  height: 80px;
+  width: 84px;
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  right: -84px;
+}
+
+.delay-anim1 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+.delay-anim1 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim1 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim1 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
+.delay-anim2 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+.delay-anim2 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim2 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim2 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
+.delay-anim3 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+.delay-anim3 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim3 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim3 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
+.delay-anim4 {
+  animation: element-btn-confirmation 1s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+.delay-anim4 :hover .prix-plat {
+  cursor: pointer;
+  margin-right: 84px;
+}
+.delay-anim4 :hover .btn-confirmation {
+  cursor: pointer;
+  animation-name: btn-confirmation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  position: absolute;
+}
+.delay-anim4 :hover .btn-confirmation .fa-circle-check {
+  animation: check 1s;
+}
+
+.titre-confirmation {
+  display: none;
+}
+
+.fa-circle-check {
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+/*@keyframes fa-circle-check  {
+            0% {
+                transform: scaleX(0);
+            }
+            100% {
+                transform: scaleX(1);
+            }
+        }*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu-entree {
+    width: 34%;
+  }
+}
+@media (min-width: 992px) {
+  .menu-entree {
+    width: 34%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu-plats {
+    width: 34%;
+  }
+}
+@media (min-width: 992px) {
+  .menu-plats {
+    width: 34%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu-desserts {
+    width: 34%;
+  }
+}
+@media (min-width: 992px) {
+  .menu-desserts {
+    width: 34%;
+  }
+}
+
+.nav-commande {
+  margin-top: 60px;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+.nav-commande .nav_btn {
+  font-size: 20px;
+}
+
+.logo {
+  position: relative;
+  font-family: "shrikhand";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+  height: 50px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.logo-fleche {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  height: 10px;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  padding-top: 20px;
+  left: 5%;
+  margin-left: 10px;
+}
+
+.barnav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #eae4e4;
+  height: 50px;
+  align-items: center;
+  box-shadow: 0.5rem 0.5rem 1rem gainsboro;
+}
+.barnav .texte-barnav {
+  font-family: Roboto;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.image-restau {
+  margin-top: 70px;
+  background: white;
+}
+.image-restau img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.titre-plats {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #99E2D0;
+  width: 45px;
+  font-size: 20px;
+}
+
+.bloc-footer {
+  background-color: rgb(76, 70, 70);
+  padding-top: 10px;
+  padding-left: 20px;
+  height: auto;
+  margin-top: 0;
+}
+.bloc-footer-elements {
+  line-height: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-footer-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-footer-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+.bloc-footer h4 {
+  color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+/*.coeur {
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 200px;
+    font-size: 30px;
+
+    transition: all 500ms ease-in-out;
+    -webkit-background-composite: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+
+    &:hover {
+
+
+        background: linear-gradient(175deg, $color_secondaire 10%, $color_primaire 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: unset;
+
+        transform: scale(1);
+
+
+
+    }
+
+}*/
+.conteneur {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: rgb(229, 225, 225);
+}
+
+.bloc {
+  background: rgb(229, 225, 225);
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 0px;
+  padding-top: 0%;
+  position: relative;
+  top: -40px;
+  height: auto;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.nom-coeur {
+  display: flex;
+  justify-content: start;
+}
+.nom-coeur .coeur {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 200px;
+  font-size: 30px;
+  transition: all 500ms ease-in-out;
+  -webkit-background-composite: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  top: -170px;
+  -webkit-text-fill-color: transparent;
+}
+.nom-coeur .coeur:hover {
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: unset;
+  transform: scale(1);
+}
+
+.nom-restaurant {
+  font-family: "shrikhand";
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.proposition {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+}
+.proposition .fa-utensils {
+  margin-right: 10px;
+}
+.proposition-titre {
+  margin-top: 0px;
+}
+
+.partenaire {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+}
+.partenaire-titre {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.mentions-legales {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+
+.contact {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bloc-reservation {
+  font-family: "Roboto";
+  background-color: hsl(0deg, 13%, 95%);
+  margin-top: 0px;
+  height: 270px;
+}
+.bloc-reservation_titre {
+  margin-top: 0px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 22px;
+}
+.bloc-reservation_sous_titre {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.bloc-fonctionnement {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.bloc-fonctionnement_titre {
+  margin-left: 10%;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-fonctionnement_titre {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-fonctionnement_titre {
+    margin-left: 20px;
+  }
 }
 
 .bloc-restaurants {
@@ -273,106 +791,35 @@ body {
   position: absolute;
   margin-left: 72%;
   margin-top: 10px;
-  animation: nouveau 3s linear infinite;
-}
-@keyframes nouveau {
-  50% {
-    opacity: 0;
-  }
-}
-.bloc-restaurants-carte .fa-regular {
-  position: absolute;
-  margin-left: 76%;
-  margin-top: 200px;
-  font-size: 20px;
-  font-size: 30px;
-}
-.bloc-restaurants-carte .fa-solid {
-  position: absolute;
-  margin-left: 76%;
-  margin-top: 200px;
-  font-size: 30px;
-  color: transparent;
-  /*background-clip: border-box ;
-  -webkit-background-clip: border-box;*/
-  transition: all 500ms ease-in-out;
-}
-.bloc-restaurants-carte .fa-solid:hover {
-  color: #9256dc;
-  /*color:$color_degrade;*/
-  transform: scale(1);
-  /*opacity: 1;*/
-}
-
-.bloc-footer {
-  background-color: rgb(76, 70, 70);
-  padding-top: 10px;
-  padding-left: 20px;
-  height: 300px;
-  margin: auto;
-}
-.bloc-footer-elements {
-  line-height: 20px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .bloc-footer-elements {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
+  .bloc-restaurants-carte .btn-nouveau {
+    margin-left: 72%;
   }
 }
 @media (min-width: 992px) {
-  .bloc-footer-elements {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
+  .bloc-restaurants-carte .btn-nouveau {
+    margin-left: 82%;
   }
 }
-.bloc-footer h4 {
-  color: white;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 15px;
-}
 
-.proposition {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  margin: auto;
+.coeur {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 200px;
+  font-size: 30px;
+  transition: all 500ms ease-in-out;
+  -webkit-background-composite: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
 }
-.proposition .fa-utensils {
-  margin-right: 10px;
-}
-.proposition-titre {
-  margin-top: 0px;
-}
-
-.partenaire {
-  text-decoration: none;
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  margin: auto;
-}
-.partenaire-titre {
-  margin-top: 0;
-  margin-left: 10px;
-}
-
-.mentions-legales {
-  text-decoration: none;
-  color: white;
-  margin: auto;
-}
-
-.contact {
-  text-decoration: none;
-  color: white;
-  margin: auto;
+.coeur:hover {
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: unset;
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=style.css.map */
