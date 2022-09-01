@@ -1,0 +1,402 @@
+.nav_btn {
+    text-align: center;
+    background: $color_degrade;
+    padding: 15px 15px;
+    color: white;
+    border-radius: 30px;
+    width: 170px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.nav_btn:hover {
+    background: linear-gradient($color_primaire, 3%, $color_secondaire);
+    opacity: 2;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 20px 7px rgba(219, 212, 212, 0.75);
+}
+
+.bloc-fonctionnement_elements {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    cursor: pointer;
+    width: 100%;
+
+    @include tablet {
+
+        flex-direction: row;
+
+    }
+
+    @include desktop {
+        flex-direction: row;
+    }
+
+
+
+    li {
+        list-style-type: none;
+        counter-increment: element;
+        display: flex;
+        margin: auto;
+        font-weight: bold;
+        background-color: #F2F2F2;
+        border-radius: 20px 20px 20px 20px;
+        align-items: center;
+        width: 80%;
+        font-family: $font_ro ;
+        height: 80px;
+        box-shadow: 0.5rem 0.5rem 1rem gainsboro;
+        margin-bottom: 20px;
+
+        @include tablet {
+            width: 29%;
+        }
+
+
+        @include desktop {
+            width: 30%;
+
+        }
+
+
+        &:hover {
+            background-color: rgb(244, 244, 251);
+            box-shadow: 1rem 1rem 1.5rem gainsboro;
+
+            i {
+                color: $color_primaire;
+            }
+        }
+
+        & i {
+            margin-right: 20px;
+            color: gray;
+            font-size: 20px;
+        }
+
+
+        &:before {
+            content: counter(element);
+            padding: 6px 10px;
+            background: $color_primaire;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 11px;
+            color: white;
+            margin-left: -10px;
+            margin-right: 30px;
+
+        }
+    }
+
+}
+
+.menu {
+    @include tablet {
+        display: flex;
+
+        /*justify-content: space-evenly;*/
+
+
+
+    }
+
+    @include desktop {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+.element-btn-confirmation {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(188, 188, 188, 0.88);
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+    width: auto;
+    text-overflow: ellipsis;
+    
+
+    /*:hover .btn-confirmation {
+        cursor: pointer;
+        animation-name: btn-confirmation;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        /*right: 80px;
+       
+       
+
+        .fa-circle-check {
+
+            animation: check 1s;
+
+        }*/
+
+
+
+
+    /*@include tablet {}
+
+    @include desktop {}*/
+
+
+    /*.element-plat {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+       
+        /*line-height: 18px;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }*/
+
+
+    .nom-plat {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .titre-plat {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+
+
+    }
+
+    .sous-titre-plat {
+        font-size: 18px;
+        margin-left: 15px;
+
+        margin-top: 5px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+
+    .prix-plat {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 9px;
+        margin-right: 10px;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .btn-confirmation {
+        background: $color_tertiaire;
+        height: 80px;
+        width: 84px;
+        border-radius: 0px 20px 20px 0px;
+        position: absolute;
+        right: -84px;
+
+    }
+
+
+
+    /*right: -83px;*/
+    /*right: -82px;
+    top: -220px;*/
+
+
+    /*display: none;
+        /*overflow: hidden;
+        z-index: 0;
+        transition: all 5s;
+        z-index: -1;*/
+
+
+
+
+}
+
+
+
+
+
+
+
+.delay-anim1 {
+
+    
+    animation: element-btn-confirmation 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    @include btn-check
+    /*:hover .prix-plat {
+        cursor: pointer;
+        margin-right: 84px;
+        }
+    :hover .btn-confirmation {
+        cursor: pointer;
+        animation-name: btn-confirmation;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        position: absolute;
+
+
+
+        .fa-circle-check {
+
+            animation: check 1s;
+
+        }*/
+
+   
+
+
+    }
+    
+
+
+.delay-anim2 {
+    animation: element-btn-confirmation 1s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    @include btn-check
+    
+}
+.delay-anim3 {
+    animation: element-btn-confirmation 1s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    @include btn-check
+    
+}
+.delay-anim4 {
+    animation: element-btn-confirmation 1s;
+    animation-fill-mode: both;
+    animation-delay: 4s;
+    @include btn-check
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.titre-confirmation {
+    display: none;
+}
+
+.fa-circle-check {
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 25px;
+
+
+
+}
+
+
+
+
+
+
+
+/*@keyframes fa-circle-check  {
+            0% {
+                transform: scaleX(0);
+            }
+            100% {
+                transform: scaleX(1);
+            }
+        }*/
+
+
+.menu-entree {
+    @include tablet {
+
+        width: 34%;
+    }
+
+    @include desktop {
+        width: 34%;
+    }
+
+}
+
+.menu-plats {
+    @include tablet {
+        width: 34%;
+    }
+
+    @include desktop {
+        width: 34%;
+    }
+}
+
+.menu-desserts {
+    @include tablet {
+
+
+        width: 34%;
+    }
+
+    @include desktop {
+        width: 34%;
+    }
+}
+
+
+
+.nav-commande {
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+
+    .nav_btn {
+        font-size: 20px;
+    }
+}
