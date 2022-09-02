@@ -19,12 +19,16 @@
   width: 100%;
   margin: auto;
   height: 10px;
-  :hover .fa-arrow-left{
-    cursor: pointer;
-    opacity: 1;
+  position: relative;
+  :hover .fleche {
+    
+      cursor: pointer;
+      
+     
+    }
   }
 
-}
+
 
 .fa-arrow-left {
   position: absolute;
