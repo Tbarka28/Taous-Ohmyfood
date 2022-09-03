@@ -9,6 +9,7 @@
   height: 50px;
   padding-top: 15px;
   width: 100%;
+  
 
 }
 
@@ -20,24 +21,24 @@
   margin: auto;
   height: 10px;
   position: relative;
-  :hover .fleche {
+  :hover  {
     
-      cursor: pointer;
-      
-     
-    }
+    cursor: pointer;
+    
+   
+  }
+  
   }
 
 
 
 .fa-arrow-left {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   color: black;
-  padding-top: 20px;
+  padding-top: 25px;
   left: 5%;
   margin-left: 10px;
-  
   
 
 }

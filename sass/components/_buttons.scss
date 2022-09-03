@@ -288,6 +288,12 @@
     @include btn-check;
     
 }
+.delay-anim10 {
+    animation: element-btn-confirmation 1s;
+    animation-fill-mode: both;
+    animation-delay: 5s;
+    @include btn-check;
+}
 
 
 
