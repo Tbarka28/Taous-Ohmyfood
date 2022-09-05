@@ -68,6 +68,17 @@
     transform: scale(1);
   }
 }
+@keyframes hideLoader {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 @media (min-width: 375px) and (max-width: 767px) {
   html,
 body {
@@ -81,6 +92,34 @@ h1 h2 h3 {
 
 h4 {
   font-family: "shrikhand";
+}
+
+.loading {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  /*ici tout ce qui concerne votre background linear gradient*/
+  background-color: lightgrey;
+  animation: hideLoader 3500ms 1 forwards;
+  animation-delay: 1500ms;
+}
+
+.loading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: rgb(13, 231, 86) solid 5px;
+  border-top-color: rgba(253, 47, 188, 0.87);
+  border-bottom-color: rgba(253, 47, 188, 0.87);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 .nav_btn {
@@ -105,7 +144,7 @@ h4 {
   background: linear-gradient(#9356DC, 3%, #FF79DA);
   opacity: 2;
   transform: scale(1.05);
-  box-shadow: 4px 6px 20px 7px rgba(219, 212, 212, 0.75);
+  box-shadow: 5px 7px 21px 8px rgba(187, 170, 170, 0.75);
 }
 
 .bloc-fonctionnement_elements {
