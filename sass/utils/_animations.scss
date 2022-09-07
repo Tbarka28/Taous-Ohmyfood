@@ -22,9 +22,39 @@
 }
 @keyframes element-btn-confirmation{
     0% {
-        transform: scale(0)
+        /*transform: scale(0)*/
+        transform: translateY(0);
       }
       100% {
-        transform: scale(1);
+        /*transform: scale(1);*/
+        transform: translateY(10%);
 }
+}
+@keyframes btn-confirmation-retour{
+    0% {
+        transform: translateX(-82px);
+        /*opacity: 0;*/
+    }
+    100% {
+        transform: translateX(0);
+        /*opacity: 1;*/
+    }
+}
+
+@keyframes hideLoader
+{
+  100%
+  {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+@keyframes spin
+{
+  100%
+  {
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
 }

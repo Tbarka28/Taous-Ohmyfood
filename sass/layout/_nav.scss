@@ -14,4 +14,26 @@
     }
     
 }
+.nav_btn {
+    text-align: center;
+    background: $color_degrade;
+    padding: 15px 15px;
+    color: white;
+    border-radius: 30px;
+    width: 170px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
+  }
+  
+  .nav_btn:hover {
+    background: linear-gradient($color_primaire, 3%, $color_secondaire);
+    opacity: 2;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 20px 7px rgba(219, 212, 212, 0.75);
+  }
 

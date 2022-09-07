@@ -16,32 +16,25 @@
     margin-bottom: 30px;
 }
 
-/*@mixin phone  { 
-  @media (min-width: 375px) and (max-width : 767px)
-   { @content ; } */
-.nav_btn {
-  text-align: center;
-  background: linear-gradient(175deg, #FF79DA 15%, #9356DC 100%);
-  padding: 15px 15px;
-  color: white;
-  border-radius: 30px;
-  width: 170px;
-  display: block;
+:hover  {
+
+    cursor: pointer;
+
+
+  }
+/*@mixin logo {
+
+  font-family: $font_sh;
+  font-size: 30px;
+  display: flex;
   justify-content: center;
-  margin: auto;
-  font-size: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
-}
+  margin-top: auto;
+  margin-bottom: 5px;
+  position: fixed;
+  height: 50px;
+  padding-top: 15px;
 
-.nav_btn:hover {
-  background: linear-gradient(#9356DC, 3%, #FF79DA);
-  opacity: 2;
-  transform: scale(1.05);
-  box-shadow: 4px 6px 20px 7px rgba(219, 212, 212, 0.75);
-}
-
+}*/
 @keyframes check {
   0% {
     transform: rotate(-180deg);
@@ -62,16 +55,29 @@
 }
 @keyframes element-btn-confirmation {
   0% {
-    transform: scale(0);
+    /*transform: scale(0)*/
+    transform: translateY(0);
   }
   100% {
-    transform: scale(1);
+    /*transform: scale(1);*/
+    transform: translateY(10%);
+  }
+}
+@keyframes btn-confirmation-retour {
+  0% {
+    transform: translateX(-82px);
+    /*opacity: 0;*/
+  }
+  100% {
+    transform: translateX(0);
+    /*opacity: 1;*/
   }
 }
 @keyframes hideLoader {
   100% {
     opacity: 0;
     display: none;
+    z-index: -1;
   }
 }
 @keyframes spin {
@@ -100,7 +106,6 @@ h4 {
   width: 100%;
   height: 100%;
   z-index: 10;
-  /*ici tout ce qui concerne votre background linear gradient*/
   background-color: lightgrey;
   animation: hideLoader 3500ms 1 forwards;
   animation-delay: 1500ms;
@@ -293,9 +298,8 @@ h4 {
 }
 
 .delay-anim1 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 100ms;
   animation-fill-mode: both;
-  animation-delay: 0.5s;
 }
 .delay-anim1 :hover .prix-plat {
   cursor: pointer;
@@ -311,11 +315,16 @@ h4 {
 .delay-anim1 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim1 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim2 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 200ms;
   animation-fill-mode: both;
-  animation-delay: 1s;
+  /*animation-delay:200ms;*/
 }
 .delay-anim2 :hover .prix-plat {
   cursor: pointer;
@@ -331,11 +340,16 @@ h4 {
 .delay-anim2 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim2 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim3 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 300ms;
   animation-fill-mode: both;
-  animation-delay: 1.5s;
+  /*animation-delay: 300ms;*/
 }
 .delay-anim3 :hover .prix-plat {
   cursor: pointer;
@@ -351,11 +365,16 @@ h4 {
 .delay-anim3 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim3 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim4 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 400ms;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  /*animation-delay: 400ms;*/
 }
 .delay-anim4 :hover .prix-plat {
   cursor: pointer;
@@ -371,11 +390,16 @@ h4 {
 .delay-anim4 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim4 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim5 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 500ms;
   animation-fill-mode: both;
-  animation-delay: 2.5s;
+  /*animation-delay: 500ms;*/
 }
 .delay-anim5 :hover .prix-plat {
   cursor: pointer;
@@ -391,11 +415,16 @@ h4 {
 .delay-anim5 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim5 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim6 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 600ms;
   animation-fill-mode: both;
-  animation-delay: 3s;
+  /*animation-delay: 600ms;*/
 }
 .delay-anim6 :hover .prix-plat {
   cursor: pointer;
@@ -411,11 +440,16 @@ h4 {
 .delay-anim6 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim6 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim7 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 700ms;
   animation-fill-mode: both;
-  animation-delay: 3.5s;
+  /*animation-delay: 400ms;*/
 }
 .delay-anim7 :hover .prix-plat {
   cursor: pointer;
@@ -431,11 +465,16 @@ h4 {
 .delay-anim7 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim7 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim8 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 800ms;
   animation-fill-mode: both;
-  animation-delay: 4s;
+  /*animation-delay: 500ms;*/
 }
 .delay-anim8 :hover .prix-plat {
   cursor: pointer;
@@ -451,11 +490,16 @@ h4 {
 .delay-anim8 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim8 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim9 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 900ms;
   animation-fill-mode: both;
-  animation-delay: 4.5s;
+  /*animation-delay: 600ms;*/
 }
 .delay-anim9 :hover .prix-plat {
   cursor: pointer;
@@ -471,11 +515,16 @@ h4 {
 .delay-anim9 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
 }
+.delay-anim9 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
 .delay-anim10 {
-  animation: element-btn-confirmation 1s;
+  animation: element-btn-confirmation 1000ms;
   animation-fill-mode: both;
-  animation-delay: 5s;
+  /*animation-delay: 700ms;*/
 }
 .delay-anim10 :hover .prix-plat {
   cursor: pointer;
@@ -490,6 +539,11 @@ h4 {
 }
 .delay-anim10 :hover .btn-confirmation .fa-circle-check {
   animation: check 1s;
+}
+.delay-anim10 :not(:hover) .btn-confirmation {
+  animation-name: btn-confirmation-retour;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 
 .titre-confirmation {
@@ -555,7 +609,7 @@ h4 {
   margin-bottom: 20px;
   height: 50px;
   padding-top: 15px;
-  width: 100%;
+  width: auto;
 }
 
 .logo-fleche {
@@ -566,9 +620,6 @@ h4 {
   height: 10px;
   position: relative;
 }
-.logo-fleche :hover {
-  cursor: pointer;
-}
 
 .fa-arrow-left {
   position: absolute;
@@ -577,6 +628,9 @@ h4 {
   padding-top: 25px;
   left: 5%;
   margin-left: 10px;
+}
+.fa-arrow-left :hover {
+  cursor: pointer;
 }
 
 .barnav {
@@ -592,6 +646,29 @@ h4 {
   font-family: Roboto;
   font-size: 15px;
   margin-left: 20px;
+}
+
+.nav_btn {
+  text-align: center;
+  background: linear-gradient(175deg, #FF79DA 15%, #9356DC 100%);
+  padding: 15px 15px;
+  color: white;
+  border-radius: 30px;
+  width: 170px;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
+}
+
+.nav_btn:hover {
+  background: linear-gradient(#9356DC, 3%, #FF79DA);
+  opacity: 2;
+  transform: scale(1.05);
+  box-shadow: 4px 6px 20px 7px rgba(219, 212, 212, 0.75);
 }
 
 html,
@@ -620,89 +697,6 @@ body {
   font-size: 20px;
 }
 
-.bloc-footer {
-  background-color: rgb(76, 70, 70);
-  padding-top: 10px;
-  height: auto;
-  margin-top: 0;
-  padding-left: 20px;
-  padding-bottom: 30px;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .bloc-footer {
-    padding-left: 0;
-  }
-}
-@media (min-width: 992px) {
-  .bloc-footer {
-    padding-left: 0;
-  }
-}
-.bloc-footer-elements {
-  line-height: 20px;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .bloc-footer-elements {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-@media (min-width: 992px) {
-  .bloc-footer-elements {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-.bloc-footer h4 {
-  color: white;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 15px;
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .bloc-footer h4 {
-    text-align: center;
-  }
-}
-@media (min-width: 992px) {
-  .bloc-footer h4 {
-    text-align: center;
-  }
-}
-
-/*.coeur {
-    position: absolute;
-    margin-left: 90%;
-    margin-top: 200px;
-    font-size: 30px;
-
-    transition: all 500ms ease-in-out;
-    -webkit-background-composite: black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-
-    &:hover {
-
-
-        background: linear-gradient(175deg, $color_secondaire 10%, $color_primaire 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: unset;
-
-        transform: scale(1);
-
-
-
-    }
-
-}*/
 .conteneur {
   height: auto;
   margin: 0;
@@ -733,17 +727,24 @@ body {
   font-size: 30px;
   transition: all 500ms ease-in-out;
   -webkit-background-composite: black;
+  -moz-background-composite: black;
   -webkit-text-fill-color: white;
+  -moz-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
+  -moz-text-stroke-widht: 1px;
   top: -170px;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .nom-coeur .coeur:hover {
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   -webkit-text-stroke: unset;
+  -moz-text-stroke: unset;
   transform: scale(1);
 }
 
@@ -753,11 +754,74 @@ body {
   font-size: 30px;
 }
 
+.bloc-footer {
+  background-color: rgb(76, 70, 70);
+  padding-top: 10px;
+  height: auto;
+  margin-top: 0;
+  padding-left: 20px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-footer {
+    padding-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-footer {
+    padding-left: 0;
+  }
+}
+.bloc-footer-elements {
+  line-height: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-footer-elements {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-footer-elements {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.bloc-footer h4 {
+  color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bloc-footer h4 {
+    text-align: start;
+    margin-left: 20ps;
+  }
+}
+@media (min-width: 992px) {
+  .bloc-footer h4 {
+    text-align: start;
+    margin-left: 20px;
+  }
+}
+
 .proposition {
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: flex-start;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .proposition {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .proposition {
+    margin-top: 15px;
+  }
 }
 .proposition .fa-utensils {
   margin-right: 10px;
@@ -765,13 +829,36 @@ body {
 .proposition-titre {
   margin-top: 0px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .proposition {
+    width: 25%;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .proposition {
+    width: 25%;
+    margin-left: 20px;
+  }
+}
 
 .partenaire {
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: flex-start;
-  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .partenaire {
+    width: 25%;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .partenaire {
+    width: 25%;
+    margin-top: 15px;
+  }
 }
 .partenaire-titre {
   margin-top: 0;
@@ -781,12 +868,31 @@ body {
 .mentions-legales {
   text-decoration: none;
   color: white;
-  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .mentions-legales {
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .mentions-legales {
+    width: 25%;
+  }
 }
 
 .contact {
   text-decoration: none;
   color: white;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact {
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    width: 25%;
+  }
 }
 
 html,
@@ -952,15 +1058,21 @@ body {
   font-size: 30px;
   transition: all 500ms ease-in-out;
   -webkit-background-composite: black;
+  -moz-background-composite: black;
   -webkit-text-fill-color: white;
+  -moz-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
+  -moz-text-stroke-widht: 1px;
 }
 .coeur:hover {
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   -webkit-text-stroke: unset;
+  -moz-text-stroke: unset;
   transform: scale(1);
 }
 
