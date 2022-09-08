@@ -1,24 +1,4 @@
-/*@mixin bloc-fonctionnement_element{
-             
-    display: flex;
-    justify-content:space-evenly;
-    font-weight: bold;
-     background-color: #F2F2F2;
-     border-radius: 20px 20px 20px 20px;
-    align-items: center;
-    width: 400px;
-    font-family: $font_ro ;
-     height: 70px;
-     box-shadow: 0.5rem 0.5rem 1rem gainsboro;
-    margin-bottom: 30px;
-}
 
-:hover  {
-    
-    cursor: pointer;
-    
-   
-  }
 /*@mixin logo {
 
   font-family: $font_sh;
@@ -45,6 +25,31 @@
     @content ;
   }
 }
+/*@mixin nav_btn {
+  text-align: center;
+  background: $color_degrade;
+  padding: 15px 15px;
+  color: white;
+  border-radius: 30px;
+  width: 170px;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+
+:hover {
+  background: linear-gradient($color_primaire, 3%, $color_secondaire);
+  opacity: 2;
+  transform: scale(1.05);
+  box-shadow: 5px 7px 21px 8px rgba(187, 170, 170, 0.75);
+}
+}*/
 
 @mixin coeur {
 
