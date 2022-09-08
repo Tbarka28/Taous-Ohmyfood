@@ -1,27 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? family= Raleway:wght@100;400 & family= Roboto:wght@300;400 & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400&family=Shrikhand&display=swap");
 /*$breakpoints: (phone: 375px, tablet: 768px, desktop: 992px)!default;*/
-/*@mixin bloc-fonctionnement_element{
-
-    display: flex;
-    justify-content:space-evenly;
-    font-weight: bold;
-     background-color: #F2F2F2;
-     border-radius: 20px 20px 20px 20px;
-    align-items: center;
-    width: 400px;
-    font-family: $font_ro ;
-     height: 70px;
-     box-shadow: 0.5rem 0.5rem 1rem gainsboro;
-    margin-bottom: 30px;
-}
-
-:hover  {
-
-    cursor: pointer;
-
-
-  }
 /*@mixin logo {
 
   font-family: $font_sh;
@@ -34,6 +13,31 @@
   height: 50px;
   padding-top: 15px;
 
+}*/
+/*@mixin nav_btn {
+  text-align: center;
+  background: $color_degrade;
+  padding: 15px 15px;
+  color: white;
+  border-radius: 30px;
+  width: 170px;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+
+:hover {
+  background: linear-gradient($color_primaire, 3%, $color_secondaire);
+  opacity: 2;
+  transform: scale(1.05);
+  box-shadow: 5px 7px 21px 8px rgba(187, 170, 170, 0.75);
+}
 }*/
 @keyframes check {
   0% {
@@ -125,31 +129,6 @@ h4 {
   border-bottom-color: rgba(253, 47, 188, 0.87);
   border-radius: 50%;
   animation: spin 1s linear infinite;
-}
-
-.nav_btn {
-  text-align: center;
-  background: linear-gradient(175deg, #FF79DA 15%, #9356DC 100%);
-  padding: 15px 15px;
-  color: white;
-  border-radius: 30px;
-  width: 170px;
-  display: block;
-  justify-content: center;
-  margin: auto;
-  font-size: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.nav_btn:hover {
-  background: linear-gradient(#9356DC, 3%, #FF79DA);
-  opacity: 2;
-  transform: scale(1.05);
-  box-shadow: 5px 7px 21px 8px rgba(187, 170, 170, 0.75);
 }
 
 .bloc-fonctionnement_elements {
@@ -663,8 +642,7 @@ h4 {
   font-weight: bold;
   box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
 }
-
-.nav_btn:hover {
+.nav_btn .nav_btn:hover {
   background: linear-gradient(#9356DC, 3%, #FF79DA);
   opacity: 2;
   transform: scale(1.05);
@@ -797,7 +775,7 @@ body {
 @media (min-width: 768px) and (max-width: 992px) {
   .bloc-footer h4 {
     text-align: start;
-    margin-left: 20ps;
+    margin-left: 20px;
   }
 }
 @media (min-width: 992px) {

@@ -87,12 +87,12 @@ body {
    
 
     @include tablet {
-        padding-left: 0;
+        padding-left: $padding-left;
         
     }
 
     @include desktop {
-        padding-left: 0;
+        padding-left: $padding-left;
        
     }
 
@@ -131,7 +131,7 @@ body {
 
         @include tablet {
             text-align: start;
-            margin-left: 20ps;
+            margin-left: 20px;
         }
 
         @include desktop {
