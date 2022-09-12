@@ -132,7 +132,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-
         font-family: $font_ro;
         font-size: 17px;
     }
@@ -169,7 +168,6 @@
         margin-bottom: 9px;
         margin-right: 10px;
 
-
     }
 
     .btn-confirmation {
@@ -179,7 +177,6 @@
         border-radius: 0px 20px 20px 0px;
         position: absolute;
         right: -84px;
-
         @include tablet {
             width: 70px;
         }
@@ -225,7 +222,6 @@
     animation: element-btn-confirmation 3.5s;
     animation-fill-mode: both;
     @include btn-check;
-
 }
 
 .delay-anim7 {
