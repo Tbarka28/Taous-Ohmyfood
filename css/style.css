@@ -600,32 +600,6 @@ h4 {
   box-shadow: 4px 6px 20px 7px rgba(219, 212, 212, 0.75);
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.image-restau {
-  margin-top: 70px;
-  background: white;
-}
-.image-restau img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  /*object-position: ;*/
-}
-
-.titre-plats {
-  margin-left: 20px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 4px solid #99E2D0;
-  width: 45px;
-  font-size: 20px;
-}
-
 .conteneur {
   height: auto;
   margin: 0;
@@ -643,44 +617,6 @@ body {
   height: auto;
   width: 100%;
   margin-bottom: auto;
-}
-
-.nom-coeur {
-  display: flex;
-  justify-content: start;
-}
-.nom-coeur .coeur {
-  position: absolute;
-  margin-left: 90%;
-  margin-top: 200px;
-  font-size: 30px;
-  transition: all 500ms ease-in-out;
-  -webkit-background-composite: black;
-  -moz-background-composite: black;
-  -webkit-text-fill-color: white;
-  -moz-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -moz-text-stroke-widht: 1px;
-  top: -170px;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-.nom-coeur .coeur:hover {
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -webkit-text-stroke: unset;
-  -moz-text-stroke: unset;
-  transform: scale(1);
-}
-
-.nom-restaurant {
-  font-family: "shrikhand";
-  margin-left: 20px;
-  font-size: 30px;
 }
 
 .bloc-footer {
@@ -1003,6 +939,70 @@ body {
   -webkit-text-stroke: unset;
   -moz-text-stroke: unset;
   transform: scale(1);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.image-restau {
+  margin-top: 70px;
+  background: white;
+}
+.image-restau img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  /*object-position: ;*/
+}
+
+.titre-plats {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #99E2D0;
+  width: 45px;
+  font-size: 20px;
+}
+
+.nom-coeur {
+  display: flex;
+  justify-content: start;
+}
+.nom-coeur .coeur {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 200px;
+  font-size: 30px;
+  transition: all 500ms ease-in-out;
+  -webkit-background-composite: black;
+  -moz-background-composite: black;
+  -webkit-text-fill-color: white;
+  -moz-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -moz-text-stroke-widht: 1px;
+  top: -170px;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.nom-coeur .coeur:hover {
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: unset;
+  -moz-text-stroke: unset;
+  transform: scale(1);
+}
+
+.nom-restaurant {
+  font-family: "shrikhand";
+  margin-left: 20px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
