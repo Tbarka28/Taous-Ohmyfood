@@ -4,8 +4,6 @@ body {
     padding: 0;
 }
 
-
-
 .image-restau {
 
     margin-top: 70px;
@@ -33,7 +31,6 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(229, 225, 225);
-
 }
 
 .bloc {
@@ -46,10 +43,7 @@ body {
     height: auto;
     width: 100%;
     margin-bottom: auto;
-
 }
-
-
 .nom-coeur {
     display: flex;
     justify-content: start;
@@ -66,15 +60,7 @@ body {
     font-family: $font_sh;
     margin-left: 20px;
     font-size: 30px;
-
-
 }
-
-
-
-
-
-
 
 .bloc-footer {
     background-color: rgb(76, 70, 70);
@@ -82,46 +68,34 @@ body {
     height: auto;
     margin-top: 0;
     padding-left: 20px;
-   margin: auto;
-  padding-bottom: 40px;
-   
+    margin: auto;
+    padding-bottom: 40px;
 
     @include tablet {
         padding-left: $padding-left;
-        
+
     }
 
     @include desktop {
         padding-left: $padding-left;
-       
-    }
 
+    }
 
     &-elements {
         line-height: 20px;
 
         @include tablet {
             display: flex;
-            
             flex-direction: row;
-            
-            
-            
+
         }
 
         @include desktop {
             display: flex;
-           
             flex-direction: row;
-           
-            
-
 
         }
     }
-
-
-
 
     h4 {
         color: white;
@@ -153,26 +127,30 @@ body {
     color: white;
     display: flex;
     justify-content: flex-start;
-    @include tablet{
+
+    @include tablet {
         margin-top: 15px;
     }
-    @include desktop{
+
+    @include desktop {
         margin-top: 15px;
     }
-    
+
 
     .fa-utensils {
         margin-right: 10px;
-        
+
     }
 
     &-titre {
         margin-top: 0px;
     }
-    @include tablet{
+
+    @include tablet {
         width: 25%;
         margin-left: 20px;
     }
+
     @include desktop {
         width: 25%;
         margin-left: 20px;
@@ -184,16 +162,18 @@ body {
     color: white;
     display: flex;
     justify-content: flex-start;
-    @include tablet{
+
+    @include tablet {
         width: 25%;
         margin-top: 15px;
     }
+
     @include desktop {
         width: 25%;
         margin-top: 15px;
     }
-   
-    
+
+
 
     &-titre {
         margin-top: 0;
@@ -207,30 +187,33 @@ body {
 .mentions-legales {
     text-decoration: none;
     color: white;
-    @include tablet{
+
+    @include tablet {
         width: 25%;
-        
+
     }
+
     @include desktop {
         width: 25%;
-       
+
     }
-    
+
 }
 
 .contact {
     text-decoration: none;
     color: white;
-    
 
-    @include tablet{
-       width: 25%;
+
+    @include tablet {
+        width: 25%;
     }
+
     @include desktop {
         width: 25%;
     }
-  
-  
+
+
 
 
 }

@@ -1,18 +1,4 @@
 
-/*@mixin logo {
-
-  font-family: $font_sh;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  margin-bottom: 5px;
-  position: fixed;
-  height: 50px;
-  padding-top: 15px;
-
-}*/
-
 @mixin tablet {
   @media (min-width: 768px) and (max-width : 992px) {
     @content ;
@@ -83,7 +69,12 @@
 
 }
 
+@mixin parame-confirmation ($nom-animation) {
+  animation-name: $nom-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 
+}
 
 @mixin btn-check {
   :hover .prix-plat {
@@ -108,14 +99,6 @@
 
 
   }
-
-
   
 }
 
-@mixin parame-confirmation ($nom-animation) {
-  animation-name: $nom-animation;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-
-}

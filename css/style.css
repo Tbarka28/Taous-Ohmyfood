@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family= Raleway:wght@100;400 & family= Roboto:wght@300;400 & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400&family=Shrikhand&display=swap");
-/*$breakpoints: (phone: 375px, tablet: 768px, desktop: 992px)!default;*/
-/*@mixin logo {
-
-  font-family: $font_sh;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  margin-bottom: 5px;
-  position: fixed;
-  height: 50px;
-  padding-top: 15px;
-
-}*/
 /*@mixin nav_btn {
   text-align: center;
   background: $color_degrade;
@@ -50,31 +36,30 @@
 @keyframes btn-confirmation {
   0% {
     transform: translateX(0px);
-    /*opacity: 0;*/
   }
   100% {
     transform: translateX(-82px);
-    /*opacity: 1;*/
   }
 }
 @keyframes element-btn-confirmation {
   0% {
-    /*transform: scale(0)*/
-    transform: translateY(0);
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
-    /*transform: scale(1);*/
-    transform: translateY(10%);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes btn-confirmation-retour {
   0% {
     transform: translateX(-82px);
-    /*opacity: 0;*/
   }
   100% {
     transform: translateX(0);
-    /*opacity: 1;*/
   }
 }
 @keyframes hideLoader {
@@ -200,7 +185,6 @@ h4 {
 @media (min-width: 768px) and (max-width: 992px) {
   .menu {
     display: flex;
-    /*justify-content: space-evenly;*/
   }
 }
 @media (min-width: 992px) {
@@ -277,7 +261,7 @@ h4 {
 }
 
 .delay-anim1 {
-  animation: element-btn-confirmation 100ms;
+  animation: element-btn-confirmation 1s;
   animation-fill-mode: both;
 }
 .delay-anim1 :hover .prix-plat {
@@ -301,9 +285,8 @@ h4 {
 }
 
 .delay-anim2 {
-  animation: element-btn-confirmation 200ms;
+  animation: element-btn-confirmation 1.5s;
   animation-fill-mode: both;
-  /*animation-delay:200ms;*/
 }
 .delay-anim2 :hover .prix-plat {
   cursor: pointer;
@@ -326,9 +309,8 @@ h4 {
 }
 
 .delay-anim3 {
-  animation: element-btn-confirmation 300ms;
+  animation: element-btn-confirmation 2s;
   animation-fill-mode: both;
-  /*animation-delay: 300ms;*/
 }
 .delay-anim3 :hover .prix-plat {
   cursor: pointer;
@@ -351,9 +333,8 @@ h4 {
 }
 
 .delay-anim4 {
-  animation: element-btn-confirmation 400ms;
+  animation: element-btn-confirmation 2.5s;
   animation-fill-mode: both;
-  /*animation-delay: 400ms;*/
 }
 .delay-anim4 :hover .prix-plat {
   cursor: pointer;
@@ -376,9 +357,8 @@ h4 {
 }
 
 .delay-anim5 {
-  animation: element-btn-confirmation 500ms;
+  animation: element-btn-confirmation 3s;
   animation-fill-mode: both;
-  /*animation-delay: 500ms;*/
 }
 .delay-anim5 :hover .prix-plat {
   cursor: pointer;
@@ -401,9 +381,8 @@ h4 {
 }
 
 .delay-anim6 {
-  animation: element-btn-confirmation 600ms;
+  animation: element-btn-confirmation 3.5s;
   animation-fill-mode: both;
-  /*animation-delay: 600ms;*/
 }
 .delay-anim6 :hover .prix-plat {
   cursor: pointer;
@@ -426,9 +405,8 @@ h4 {
 }
 
 .delay-anim7 {
-  animation: element-btn-confirmation 700ms;
+  animation: element-btn-confirmation 4s;
   animation-fill-mode: both;
-  /*animation-delay: 400ms;*/
 }
 .delay-anim7 :hover .prix-plat {
   cursor: pointer;
@@ -451,9 +429,8 @@ h4 {
 }
 
 .delay-anim8 {
-  animation: element-btn-confirmation 800ms;
+  animation: element-btn-confirmation 4.5s;
   animation-fill-mode: both;
-  /*animation-delay: 500ms;*/
 }
 .delay-anim8 :hover .prix-plat {
   cursor: pointer;
@@ -476,9 +453,8 @@ h4 {
 }
 
 .delay-anim9 {
-  animation: element-btn-confirmation 900ms;
+  animation: element-btn-confirmation 5s;
   animation-fill-mode: both;
-  /*animation-delay: 600ms;*/
 }
 .delay-anim9 :hover .prix-plat {
   cursor: pointer;
@@ -501,9 +477,8 @@ h4 {
 }
 
 .delay-anim10 {
-  animation: element-btn-confirmation 1000ms;
+  animation: element-btn-confirmation 5.5s;
   animation-fill-mode: both;
-  /*animation-delay: 700ms;*/
 }
 .delay-anim10 :hover .prix-plat {
   cursor: pointer;
@@ -642,7 +617,7 @@ h4 {
   font-weight: bold;
   box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
 }
-.nav_btn .nav_btn:hover {
+.nav_btn:hover {
   background: linear-gradient(#9356DC, 3%, #FF79DA);
   opacity: 2;
   transform: scale(1.05);

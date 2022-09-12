@@ -31,7 +31,7 @@
     box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
   
   
-  .nav_btn:hover {
+  &:hover {
     background: linear-gradient($color_primaire, 3%, $color_secondaire);
     opacity: 2;
     transform: scale(1.05);
