@@ -1,34 +1,31 @@
+.loading {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: lightgrey;
+    animation: hideLoader 3500ms 1 forwards;
+    animation-delay: 1500ms;
 
-.loading
-{
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 10;  
-  background-color: lightgrey;
-  animation: hideLoader 3500ms 1 forwards;
-  animation-delay: 1500ms;
-  
 }
 
-.loading::after
-{
-  content : "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);  
-  width: 50px;
-  height: 50px;
-  border: rgb(13, 231, 86) solid 5px;
-  border-top-color: rgba(253, 47, 188, 0.87);
-  border-bottom-color:  rgba(253, 47, 188, 0.87);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+.loading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: rgb(13, 231, 86) solid 5px;
+    border-top-color: rgba(253, 47, 188, 0.87);
+    border-bottom-color: rgba(253, 47, 188, 0.87);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
 }
- 
+
 
 .bloc-fonctionnement_elements {
     display: flex;
@@ -38,16 +35,12 @@
     width: 100%;
 
     @include tablet {
-
         flex-direction: row;
-
     }
 
     @include desktop {
         flex-direction: row;
     }
-
-
 
     li {
         list-style-type: none;
@@ -68,12 +61,9 @@
             width: 29%;
         }
 
-
         @include desktop {
             width: 30%;
-
         }
-
 
         &:hover {
             background-color: rgb(244, 244, 251);
@@ -111,10 +101,6 @@
     @include tablet {
         display: flex;
 
-        /*justify-content: space-evenly;*/
-
-
-
     }
 
     @include desktop {
@@ -123,13 +109,7 @@
 }
 
 
-
-
-
-
 .element-btn-confirmation {
-
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -145,9 +125,6 @@
     padding-bottom: 0px;
     width: auto;
     text-overflow: ellipsis;
-    
-   
-
 
     .nom-plat {
         display: flex;
@@ -155,7 +132,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-       
+
         font-family: $font_ro;
         font-size: 17px;
     }
@@ -168,8 +145,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-
-
 
     }
 
@@ -193,8 +168,8 @@
         font-size: 20px;
         margin-bottom: 9px;
         margin-right: 10px;
-        
-        
+
+
     }
 
     .btn-confirmation {
@@ -204,117 +179,81 @@
         border-radius: 0px 20px 20px 0px;
         position: absolute;
         right: -84px;
+
         @include tablet {
             width: 70px;
         }
-       
-            
-    
-     
     }
-    
-
-
-
-    
-
-
-
 }
-
-
-
-
-
-
 
 .delay-anim1 {
-
-    
-    animation: element-btn-confirmation 100ms;
+    animation: element-btn-confirmation 1s;
     animation-fill-mode: both;
     @include btn-check;
-    
-   
 
-
-    }
-    
-
+}
 
 .delay-anim2 {
-    animation: element-btn-confirmation 200ms;
+    animation: element-btn-confirmation 1.5s;
     animation-fill-mode: both;
-    /*animation-delay:200ms;*/
     @include btn-check;
-    
+
 }
+
 .delay-anim3 {
-    animation: element-btn-confirmation 300ms;
+    animation: element-btn-confirmation 2s;
     animation-fill-mode: both;
-    /*animation-delay: 300ms;*/
     @include btn-check;
-    
+
 }
+
 .delay-anim4 {
-    animation: element-btn-confirmation 400ms;
+    animation: element-btn-confirmation 2.5s;
     animation-fill-mode: both;
-    /*animation-delay: 400ms;*/
     @include btn-check;
-    
+
 }
+
 .delay-anim5 {
-    animation: element-btn-confirmation 500ms;
+    animation: element-btn-confirmation 3s;
     animation-fill-mode: both;
-    /*animation-delay: 500ms;*/
     @include btn-check;
-    
+
 }
+
 .delay-anim6 {
-    animation: element-btn-confirmation 600ms;
+    animation: element-btn-confirmation 3.5s;
     animation-fill-mode: both;
-    /*animation-delay: 600ms;*/
     @include btn-check;
-    
+
 }
+
 .delay-anim7 {
-    animation: element-btn-confirmation 700ms;
+    animation: element-btn-confirmation 4s;
     animation-fill-mode: both;
-    /*animation-delay: 400ms;*/
     @include btn-check;
-    
+
 }
+
 .delay-anim8 {
-    animation: element-btn-confirmation 800ms;
+    animation: element-btn-confirmation 4.5s;
     animation-fill-mode: both;
-    /*animation-delay: 500ms;*/
     @include btn-check;
-    
+
 }
+
 .delay-anim9 {
-    animation: element-btn-confirmation 900ms;
+    animation: element-btn-confirmation 5s;
     animation-fill-mode: both;
-    /*animation-delay: 600ms;*/
     @include btn-check;
-    
+
 }
+
 .delay-anim10 {
-    animation: element-btn-confirmation 1000ms;
+    animation: element-btn-confirmation 5.5s;
     animation-fill-mode: both;
-    /*animation-delay: 700ms;*/
     @include btn-check;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .titre-confirmation {
     display: none;
@@ -326,10 +265,7 @@
     margin-top: 30px;
     margin-left: 25px;
 
-
-
 }
-
 
 .menu-entree {
     @include tablet {
@@ -365,8 +301,6 @@
     }
 }
 
-
-
 .nav-commande {
     margin-top: 60px;
     margin-bottom: 0;
@@ -376,4 +310,3 @@
         font-size: 20px;
     }
 }
-
