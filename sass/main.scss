@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2? family= Raleway:wght@100;400 & family= Roboto:wght@300;400 & display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto:wght@300;400&family=Shrikhand&display=swap");
 @import "./utils/variables";
-@import "./utils/functions";
+
 @import "./utils/mixins";
 @import "./utils/animations";
 
 @import "./base/base";
-@import "./base/typography";
+
 
 @import "./components/buttons";
 
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/container";
-@import "./layout/form";
+
 
 
 @import "./pages/index";
