@@ -110,7 +110,7 @@
     color: white;
     display: flex;
     justify-content: flex-start;
-
+    margin-top: 10px;
     @include tablet {
         width: 25%;
         margin-top: 15px;
@@ -133,13 +133,19 @@
 .mentions-legales {
     text-decoration: none;
     color: white;
+    p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
     @include tablet {
         width: 25%;
-
+       
     }
 
     @include desktop {
         width: 25%;
+       
 
     }
 
@@ -148,9 +154,13 @@
 .contact {
     text-decoration: none;
     color: white;
+    p{
+        margin-top: 15px;
+    }
 
     @include tablet {
         width: 25%;
+
     }
 
     @include desktop {
