@@ -4,6 +4,34 @@ body {
     padding: 0;
 }
 
+.loading {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: lightgrey;
+    animation: hideLoader 3500ms 1 forwards;
+    animation-delay: 1500ms;
+
+}
+
+.loading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: rgb(13, 231, 86) solid 5px;
+    border-top-color: rgba(253, 47, 188, 0.87);
+    border-bottom-color: rgba(253, 47, 188, 0.87);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
 .bloc-reservation {
     font-family: $font_ro ;
     background-color: hsl(0, 13%, 95%);
@@ -27,8 +55,6 @@ body {
 
 
 }
-
-
 
 .bloc-fonctionnement {
     margin: 0;
@@ -174,7 +200,8 @@ body {
 
     }
 
-    }
-.coeur{
+}
+
+.coeur {
     @include coeur
 }
