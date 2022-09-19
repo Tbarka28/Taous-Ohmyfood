@@ -13,7 +13,7 @@ body {
         width: 100%;
         height: 300px;
         object-fit: cover;
-        /*object-position: ;*/
+       
 
     }
 }
@@ -33,11 +33,15 @@ body {
     justify-content: start;
 
     .coeur {
+        
         @include coeur;
         top: -170px;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+        
+        
     }
+
 }
 
 .nom-restaurant {
