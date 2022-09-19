@@ -11,10 +11,11 @@
     margin-top: 0px;
     padding-top: 0%;
     position: relative;
-    top: -40px;
+    top: -60px;
     height: auto;
     width: 100%;
     margin-bottom: auto;
+    
 }
 
 
@@ -58,6 +59,7 @@
         margin: auto;
         margin-bottom: 20px;
         margin-top: 15px;
+        font-family: $font_sh;
 
         @include tablet {
             text-align: start;
@@ -76,6 +78,7 @@
     color: white;
     display: flex;
     justify-content: flex-start;
+    font-family: $font_ro;
 
     @include tablet {
         margin-top: 15px;
@@ -111,6 +114,7 @@
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
+    font-family: $font_ro;
     @include tablet {
         width: 25%;
         margin-top: 15px;
@@ -133,18 +137,22 @@
 .mentions-legales {
     text-decoration: none;
     color: white;
+    
     p{
         margin-top: 10px;
         margin-bottom: 20px;
+        font-family: $font_ro;
     }
     
     @include tablet {
         width: 25%;
+        margin-top: 5px;
        
     }
 
     @include desktop {
         width: 25%;
+        margin-top: 5px;
        
 
     }
@@ -156,6 +164,7 @@
     color: white;
     p{
         margin-top: 15px;
+        font-family: $font_ro;
     }
 
     @include tablet {
