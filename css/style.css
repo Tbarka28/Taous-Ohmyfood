@@ -49,20 +49,12 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-/*@media (min-width: 375px) and (max-width : 767px){
-   html,
-   body {
-      margin: 0;
-      padding: 0;
-   }
-
-}*/
-h1 h2 h3 {
+h1 h4 {
   font-family: "shrikhand";
 }
 
-h4 {
-  font-family: "shrikhand";
+h2 h3 {
+  font-family: "Roboto";
 }
 
 .bloc-fonctionnement_elements {
@@ -586,7 +578,7 @@ h4 {
   margin-top: 0px;
   padding-top: 0%;
   position: relative;
-  top: -40px;
+  top: -60px;
   height: auto;
   width: 100%;
   margin-bottom: auto;
@@ -631,6 +623,7 @@ h4 {
   margin: auto;
   margin-bottom: 20px;
   margin-top: 15px;
+  font-family: "shrikhand";
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bloc-footer h4 {
@@ -650,6 +643,7 @@ h4 {
   color: white;
   display: flex;
   justify-content: flex-start;
+  font-family: "Roboto";
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .proposition {
@@ -686,6 +680,7 @@ h4 {
   display: flex;
   justify-content: flex-start;
   margin-top: 10px;
+  font-family: "Roboto";
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .partenaire {
@@ -711,15 +706,18 @@ h4 {
 .mentions-legales p {
   margin-top: 10px;
   margin-bottom: 20px;
+  font-family: "Roboto";
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .mentions-legales {
     width: 25%;
+    margin-top: 5px;
   }
 }
 @media (min-width: 992px) {
   .mentions-legales {
     width: 25%;
+    margin-top: 5px;
   }
 }
 
@@ -729,6 +727,7 @@ h4 {
 }
 .contact p {
   margin-top: 15px;
+  font-family: "Roboto";
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .contact {
@@ -796,9 +795,11 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "Roboto";
 }
 .bloc-fonctionnement_titre {
   margin-left: 10%;
+  font-family: "Roboto";
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bloc-fonctionnement_titre {
@@ -839,6 +840,7 @@ body {
 
 .restaurant-titre {
   margin-left: 30px;
+  font-family: "Roboto";
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -868,6 +870,7 @@ body {
   box-shadow: 0.5rem 0.5rem 1rem gainsboro;
   margin-bottom: 30px;
   margin-left: 20px;
+  font-family: "Roboto";
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bloc-restaurants-carte {
@@ -891,10 +894,12 @@ body {
   margin-left: 10px;
   padding-top: 20px;
   margin-top: 0px;
+  font-family: "Roboto";
 }
 .bloc-restaurants-carte-sous-titre {
   margin-left: 10px;
   margin-top: 0px;
+  font-family: "Roboto";
 }
 .bloc-restaurants-carte img {
   width: 100%;
@@ -912,6 +917,7 @@ body {
   position: absolute;
   margin-left: 72%;
   margin-top: 10px;
+  font-family: "Roboto";
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bloc-restaurants-carte .btn-nouveau {
@@ -928,7 +934,7 @@ body {
   position: absolute;
   margin-left: 90%;
   margin-top: 200px;
-  font-size: 30px;
+  font-size: 25px;
   transition: all 500ms ease-in-out;
   -webkit-background-composite: black;
   -moz-background-composite: black;
@@ -973,6 +979,7 @@ body {
   border-bottom: 4px solid #99E2D0;
   width: 45px;
   font-size: 20px;
+  font-family: "Roboto";
 }
 
 .nom-coeur {
@@ -983,7 +990,7 @@ body {
   position: absolute;
   margin-left: 90%;
   margin-top: 200px;
-  font-size: 30px;
+  font-size: 25px;
   transition: all 500ms ease-in-out;
   -webkit-background-composite: black;
   -moz-background-composite: black;
