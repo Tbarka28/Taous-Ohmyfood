@@ -60,11 +60,12 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: $font_ro;
 
     &_titre {
 
         margin-left: 10%;
-
+        font-family: $font_ro;       
         @include tablet {
             margin-left: 20px;
         }
@@ -113,6 +114,7 @@ body {
 
 .restaurant-titre {
     margin-left: 30px;
+    font-family: $font_ro;
 }
 
 .bloc-restaurants-cartes {
@@ -141,6 +143,7 @@ body {
     box-shadow: 0.5rem 0.5rem 1rem gainsboro;
     margin-bottom: 30px;
     margin-left: 20px;
+    font-family: $font_ro;
 
     @include tablet {
         display: flex;
@@ -162,12 +165,14 @@ body {
         margin-left: 10px;
         padding-top: 20px;
         margin-top: 0px;
+        font-family: $font_ro;
 
     }
 
     &-sous-titre {
         margin-left: 10px;
         margin-top: 0px;
+        font-family: $font_ro;
     }
 
     & img {
@@ -188,6 +193,7 @@ body {
         position: absolute;
         margin-left: 72%;
         margin-top: 10px;
+        font-family: $font_ro;
 
         @include tablet {
             margin-left: 72%;
@@ -203,5 +209,9 @@ body {
 }
 
 .coeur {
-    @include coeur
-}
+    
+        @include coeur
+    }
+
+   
+       
