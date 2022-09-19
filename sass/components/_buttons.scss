@@ -69,13 +69,16 @@
 }
 
 .menu {
+    margin: 0 auto;
     @include tablet {
         display: flex;
+        margin: 0 auto;
 
     }
 
     @include desktop {
         display: flex;
+        margin: 0 auto;
     }
 }
 
@@ -156,6 +159,7 @@
 }
 
 .delay-anim1 {
+    
     animation: element-btn-confirmation 1s;
     animation-fill-mode: both;
     @include btn-check;
@@ -257,11 +261,11 @@
 
 .menu-desserts {
     @include tablet {
-        width: 34%;
+        width: 32%;
     }
 
     @include desktop {
-        width: 34%;
+        width: 32%;
     }
 }
 
