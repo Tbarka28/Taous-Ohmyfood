@@ -118,14 +118,17 @@ body {
 }
 
 .bloc-restaurants-cartes {
+    width: 100%;
     @include tablet {
         display: flex;
         flex-wrap: wrap;
+        margin:  0 auto;
     }
 
     @include desktop {
         display: flex;
         flex-wrap: wrap;
+        margin:  0 auto;
     }
 }
 
@@ -134,15 +137,15 @@ body {
     flex-direction: column;
     background: white;
     border-radius: 20px 20px 20px 20px;
-    width: 92%;
+    width: 95%;
     height: 260px;
     text-decoration: none;
     color: black;
     line-height: 15px;
     position: relative;
     box-shadow: 0.5rem 0.5rem 1rem gainsboro;
-    margin-bottom: 30px;
-    margin-left: 20px;
+   
+    margin: 30px auto;
     font-family: $font_ro;
 
     @include tablet {
@@ -151,6 +154,8 @@ body {
         width: 46%;
         height: 270px;
         padding: 0;
+        margin-bottom: 20px;
+        margin-top: auto;
     }
 
     @include desktop {
@@ -159,6 +164,8 @@ body {
         width: 47%;
         height: 270px;
         padding: 0;
+        margin-bottom: 20px;
+        margin-top: auto;
     }
 
     &-titre {
