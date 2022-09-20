@@ -173,10 +173,12 @@ h2 h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Roboto";
 }
 .element-btn-confirmation .sous-titre-plat {
   font-size: 18px;
   margin-left: 15px;
+  font-family: "Roboto";
   margin-top: 5px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -191,6 +193,7 @@ h2 h3 {
   font-size: 20px;
   margin-bottom: 9px;
   margin-right: 10px;
+  font-family: "Roboto";
 }
 .element-btn-confirmation .btn-confirmation {
   background: #99E2D0;
@@ -494,9 +497,11 @@ h2 h3 {
   margin-top: 60px;
   margin-bottom: 0;
   padding-bottom: 40px;
+  font-family: "Roboto";
 }
 .nav-commande .nav_btn {
   font-size: 20px;
+  font-family: "Roboto";
 }
 
 .logo {
