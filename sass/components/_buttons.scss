@@ -118,13 +118,13 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-
+        font-family: $font_ro;
     }
 
     .sous-titre-plat {
         font-size: 18px;
         margin-left: 15px;
-
+        font-family: $font_ro;
         margin-top: 5px;
         margin-bottom: 10px;
         overflow: hidden;
@@ -141,6 +141,7 @@
         font-size: 20px;
         margin-bottom: 9px;
         margin-right: 10px;
+        font-family: $font_ro;
 
     }
 
@@ -151,6 +152,7 @@
         border-radius: 0px 20px 20px 0px;
         position: absolute;
         right: -84px;
+       
 
         @include tablet {
             width: 70px;
@@ -273,8 +275,10 @@
     margin-top: 60px;
     margin-bottom: 0;
     padding-bottom: 40px;
+    font-family: $font_ro;
 
     .nav_btn {
         font-size: 20px;
+        font-family: $font_ro;
     }
 }

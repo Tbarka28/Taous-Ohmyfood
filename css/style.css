@@ -562,6 +562,7 @@ h2 h3 {
   text-decoration: none;
   font-weight: bold;
   box-shadow: 3px 5px 19px 6px rgba(219, 212, 212, 0.75);
+  font-family: "Roboto";
 }
 .nav_btn:hover {
   background: linear-gradient(#9356DC, 3%, #FF79DA);
